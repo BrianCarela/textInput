@@ -9,6 +9,7 @@ export default class App extends React.Component {
       value: "Edit me!"
     }
     // when accessed from elsewhere, the context of 'this' would refer to wherever the original function loves. Binding 'this' makes it so the scope changes to refer to the constructor class' 'this'. So when the function is used as a prop, if the function uses 'this', it will instead refer to the constructor class, and now we can edit this.state with the function!
+    // new comment to test something
     this.handleChangeText = this.handleChangeText.bind(this)
   }
 
